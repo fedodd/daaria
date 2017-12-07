@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+  }
+}
+
+.menu-item {
+
+  @mixin respond-to medium {
+      padding: 0 15px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+  }
+}
