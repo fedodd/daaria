@@ -1,0 +1,27 @@
+.portfolio {
+  background-color: $color-background;
+}
+
+.portfolio-titleBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 680px;
+  background-color: black;
+}
+
+.portfolio-title {
+  font: $font-mainTitle;
+  line-height: -webkit-fill-available;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.portfolio-content {
+
+  @mixin respond-to medium {
+    width: 400px;
+  }
+}
