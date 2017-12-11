@@ -22,8 +22,33 @@
 }
 
 .portfolio-content {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 60px;
 
   @mixin respond-to medium {
-    width: 400px;
+    flex-direction: row;
+    padding-top: 0;
+    height: 700px;
+  }
+}
+
+.portfolio-block {
+  width: 100%;
+
+  @mixin respond-to medium {
+    width: 50%;
+  }
+}
+
+.portfolio-block__photo {
+  height: 548px;
+  background-image: url('../images/000095960032.jpg');
+  background-position: center;
+  background-size: cover;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    height: inherit;
   }
 }
