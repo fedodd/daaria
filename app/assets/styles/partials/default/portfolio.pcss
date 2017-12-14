@@ -34,6 +34,7 @@
 }
 
 .portfolio-block {
+  padding: 10% 3%;
   width: 100%;
 
   @mixin respond-to medium {
@@ -42,6 +43,7 @@
 }
 
 .portfolio-block__photo {
+  margin: 0;
   height: 548px;
   background-image: url('../images/000095960032.jpg');
   background-position: center;
@@ -51,4 +53,23 @@
     flex-direction: row;
     height: inherit;
   }
+}
+
+.portfolio-name {
+  margin: 0 0 8px;
+  font: $font-title;
+
+  @mixin respond-to medium {
+    font-size: 26px;
+  }
+}
+
+.prtfolio-comment {
+  font: $font-sub;
+  font-weight: 300;
+}
+
+.portfolio-text {
+  font: $font;
+  font-weight: 300;
 }
