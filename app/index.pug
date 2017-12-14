@@ -2,16 +2,17 @@ extends layouts/default
 
 block content
   div.portfolio
-    div(class='portfolio-banner' style={'background-image': 'url(assets/images/000071180031.jpg)'})
+    div(class="portfolio-banner" style={'background-image': 'url(assets/images/000071180031.jpg)'})
       h1.portfolio-title portfolio
     div.portfolio-content
-      .portfolio-block
+      .portfolioBlock
         .holder
-          h2.portfolio-name Daria Denisova
-          span.prtfolio-comment Event Producer
-          p.portfolio-text I'm 26 years old and have been working in creative and events agencies since I graduated from university in 2013.
-          p.portfolio-text I've worked in a number of roles, starting out as an assistant to a project manager before going on to manage projects myself. I currently work for STEREOTACTIC, a major creative and event production agency here in Moscow.
-          p.portfolio-text Contact me:
-            a.portfolio-phone +7 967 290 8418
-            a.portfolio-email daaria.me@gmail.com
-      .portfolio-block.portfolio-block__photo
+          h2.portfolioBlock-name Daria Denisova
+          span.portfolioBlock-comment Event Producer
+          p.portfolioBlock-text I'm 26 years old and have been working in creative and events agencies since I graduated from university in 2013.
+          p.portfolioBlock-text I've worked in a number of roles, starting out as an assistant to a project manager before going on to manage projects myself. I currently work for <a class="portfolioBlock-link portfolioBlock-link__inline" href="https://www.facebook.com/STEREOTACTICMOSCOW/">STEREOTACTIC</a>, a major creative and event production agency here in Moscow.
+          .portfolioBlock-contacts
+            p.portfolioBlock-text Contact me:
+              a.portfolioBlock-link.portfolioBlock-link__phone(href='tel:+7 967 290 8418') +7 967 290 8418
+              a.portfolioBlock-link.portfolioBlock-link__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
+      .portfolioBlock.portfolioBlock__photo
