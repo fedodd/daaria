@@ -1,0 +1,64 @@
+.menu-toggleBlock {
+  position: relative;
+  width: $size-toggleWidth;
+  height: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 8px;
+  display: inline-block;
+  cursor: pointer;
+  height: 20px;
+}
+
+.menu-toggle span {
+  position: absolute;
+  display: block;
+  width: $size-toggleWidth;
+  height: 4px;
+  background: white;
+
+  &::after,
+  &::before {
+    position: absolute;
+    display: block;
+    width: $size-toggleWidth;
+    height: 4px;
+    background: white;
+    content: '';
+  }
+}
+
+.menu-toggle span:before {
+  top: -8px;
+}
+.menu-toggle span:after {
+  bottom: -8px;
+}
+
+/* Добавим анимацию всех свойств для блоков нашей иконки */
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+/* Центральный блок делаем прозрачным */
+.menu-toggle.is__active span {
+  background-color: transparent;
+}
+
+/* Смещаем псевдо-элементы в центр иконки (на место основного блока) */
+.menu-toggle.is__active span:before, .menu-toggle.is__active span:after {
+  top: 0;
+}
+
+/* Наклоняем псевдо-элементы под углом 45 градусов, но в разные стороны */
+.menu-toggle.is__active span:before {
+  transform: rotate(-45deg);
+}
+.menu-toggle.is__active span:after {
+  transform: rotate(45deg);
+}

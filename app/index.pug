@@ -1,10 +1,10 @@
 extends layouts/default
 
 block content
-  div.portfolio
+  .portfolio
     div(class="portfolio-banner" style={'background-image': 'url(assets/images/000071180031.jpg)'})
       h1.portfolio-title portfolio
-    div.portfolio-content
+    .portfolio-content
       .portfolioBlock
         .holder
           h2.portfolioBlock-name Daria Denisova
@@ -16,3 +16,7 @@ block content
               a.portfolioBlock-link.portfolioBlock-link__phone(href='tel:+7 967 290 8418') +7 967 290 8418
               a.portfolioBlock-link.portfolioBlock-link__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
       .portfolioBlock.portfolioBlock__photo
+  .works
+    .holder
+      h2.works-title My Work
+      p.works-subTitle In my role as an event producer <br>I work with clients on a wide variety of productions

@@ -1,15 +1,39 @@
 .menu {
+  position: absolute;
+  top: -1000%;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
   margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
   font-size: 13px;
+  text-align: center;
+  background-color: white;
+  transition: top 500ms ease-in-out;
 
   @mixin respond-to medium {
+    display: none;
+  }
+
+  &.is__fullScreen {
+    position: relative;
+    top: 0;
+    display: none;
     flex-direction: row;
+    background-color: transparent;
+
+    @mixin respond-to medium {
+      display: flex;
+    }
+  }
+
+  &.is__active {
+    top: $header-height;
+    padding: 5px 0;
   }
 }
 
@@ -25,5 +49,29 @@
       &:first-child {
         padding-left: 0;
       }
+  }
+}
+
+.menu-link,
+.menu-link:active,
+.menu-link:visited,
+.menu-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: black;
+
+  &:active,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    font-weight: bold;
   }
 }
