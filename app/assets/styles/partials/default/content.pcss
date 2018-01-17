@@ -1,0 +1,17 @@
+.content-title {
+  margin: 0;
+  padding-top: $padding-block;
+  padding-bottom: $padding-block;
+  font: $font-title;
+  text-align: center;
+
+  @mixin respond-to medium {
+    padding-top: $padding-blockTopBig;
+    padding-bottom: $padding-blockBottomBig;
+  }
+
+  &.is__special {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+}

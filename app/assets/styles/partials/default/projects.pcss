@@ -1,0 +1,34 @@
+.projectsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+}
+
+.projectsList-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  font: $font-title;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  background-position: center;
+  background-size: cover;
+
+  @mixin respond-to medium {
+    width: 50%;
+  }
+
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: white;
+  }
+}
