@@ -1,0 +1,31 @@
+.brands-title {
+  margin: 0;
+  padding-top: $padding-block;
+  padding-bottom: $padding-block;
+  font: $font-title;
+  text-align: center;
+
+  @mixin respond-to medium {
+    padding-top: $padding-blockTopBig;
+    padding-bottom: $padding-blockBottomBig;
+  }
+}
+
+.brandsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  flex-row: row;
+}
+
+.brandsList-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.brandsList-icon {
+  width: 160px;
+  vertical-align: center;
+}
