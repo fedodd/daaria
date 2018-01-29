@@ -4,5 +4,3 @@ node_modules
 bower_components
 npm-debug.log
 build
-.postcss-sorting.json
-package.json
