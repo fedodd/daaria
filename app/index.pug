@@ -10,11 +10,11 @@ block content
           h2.portfolioBlock-name Daria Denisova
           span.portfolioBlock-comment Event Producer
           p.portfolioBlock-text I'm 26 years old and have been working in creative and events agencies since I graduated from university in 2013.
-          p.portfolioBlock-text I've worked in a number of roles, starting out as an assistant to a project manager before going on to manage projects myself. I currently work for <a class="portfolioBlock-link portfolioBlock-link__inline" href="https://www.facebook.com/STEREOTACTICMOSCOW/">STEREOTACTIC</a>, a major creative and event production agency here in Moscow.
-          .portfolioBlock-contacts
+          p.portfolioBlock-text I've worked in a number of roles, starting out as an assistant to a project manager before going on to manage projects myself. I currently work for <a class="portfolioBlock-link" href="https://www.facebook.com/STEREOTACTICMOSCOW/">STEREOTACTIC</a>, a major creative and event production agency here in Moscow.
+          .contactsBLock
             p.portfolioBlock-text Contact me:
-              a.portfolioBlock-link.portfolioBlock-link__phone(href='tel:+7 967 290 8418') +7 967 290 8418
-              a.portfolioBlock-link.portfolioBlock-link__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
+              a.contactsBLock-link.contactsBLock-link__phone(href='tel:+7 967 290 8418') +7 967 290 8418
+              a.contactsBLock-link.contactsBLock-link__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
       .portfolioBlock.portfolioBlock__photo
   .work#work
     .holder
@@ -114,3 +114,12 @@ block content
     .interestsBlock
       h3.interests-title Art
       include partials/interestsArt.pug
+  .contacts#contacts
+    h2.content-title Contact me
+    a.contactsBLock-link.is__phone(href='tel:+7 967 290 8418') +7 967 290 8418
+    a.contactsBLock-link.is__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
+    .socialBlock
+      a.socialBlock-link(href='https://www.facebook.com/daariadi')
+        i(class="fa fa-facebook fa-2x" aria-hidden="true")
+      a.socialBlock-link(href='https://www.instagram.com/wsnt_me')
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
