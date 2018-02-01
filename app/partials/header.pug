@@ -1,6 +1,21 @@
-
 header.header
-  .holder
-    .header-block
-      a.header-title Daria Denisova
-      include ../partials/menu.pug
+  .header-wrapper
+    .holder
+      .header-block
+        a.header-title Daria Denisova
+        include ../partials/menu.pug
+ul.menu#headerMenu
+  li.menu-item.is__sliding
+    a.menu-link(href='#bio') Bio
+  li.menu-item
+    a.menu-link(href='#work') Work
+  li.menu-item
+    a.menu-link(href='#skills') Skills
+  li.menu-item
+    a.menu-link(href='#brands') Brands
+  li.menu-item
+    a.menu-link(href='#projects') Projects
+  li.menu-item
+    a.menu-link(href='#interests') Interests
+  li.menu-item
+    a.menu-link(href='#contacts') Contacts

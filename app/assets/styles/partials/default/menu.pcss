@@ -1,13 +1,13 @@
 .menu {
   position: absolute;
-  top: -1000%;
+  top: -100%;
   right: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
   margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   font-size: 13px;
@@ -32,7 +32,9 @@
   }
 
   &.is__active {
-    top: $header-height;
+ //   top: $header-height;
+    top: 20px;
+    z-index: 9;
     padding: 5px 0;
   }
 }
