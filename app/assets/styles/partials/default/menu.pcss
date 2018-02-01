@@ -1,5 +1,5 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: -100%;
   right: 0;
   left: 0;
@@ -32,10 +32,10 @@
   }
 
   &.is__active {
- //   top: $header-height;
-    top: 20px;
+    top: $header-height;
     z-index: 9;
     padding: 5px 0;
+    border-bottom: 1px solid lightgrey;
   }
 }
 
@@ -63,6 +63,8 @@
 }
 
 .menu-link {
+  display: inline-block;
+  width: 100%;
   text-decoration: none;
   color: black;
 
