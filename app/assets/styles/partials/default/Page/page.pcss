@@ -1,0 +1,47 @@
+.page-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 615px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.page-title {
+  margin: 0 5%;
+  font: $font-mainTitle;
+  text-align: center;
+  color: white;
+}
+
+.page-description {
+  display: flex;
+  padding-top: $padding-block;
+
+  @mixin respond-to mediun {
+    flex-direction: column;
+  }
+}
+
+.page-subTitle {
+  flex-shrink: 0;
+  margin: 0;
+  margin-right: 20px;
+  padding: 20px 0 0;
+  width: 300px;
+  border-top: 4px solid black;
+  font: $font-titleAlt;
+}
+
+.page-textBlock {
+  margin-top: -6px;
+}
+
+.page-text {
+  margin: 0;
+  padding: 0 0 20px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
