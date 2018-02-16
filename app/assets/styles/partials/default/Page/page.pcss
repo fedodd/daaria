@@ -16,10 +16,11 @@
 
 .page-description {
   display: flex;
+  flex-direction: column;
   padding-top: $padding-block;
 
-  @mixin respond-to mediun {
-    flex-direction: column;
+  @mixin respond-to medium {
+    flex-direction: row;
   }
 }
 
@@ -27,10 +28,14 @@
   flex-shrink: 0;
   margin: 0;
   margin-right: 20px;
-  padding: 20px 0 0;
-  width: 300px;
+  padding: 20px 0 30px;
+
   border-top: 4px solid black;
   font: $font-titleAlt;
+
+  @mixin respond-to medium {
+    width: 300px;
+  }
 }
 
 .page-textBlock {

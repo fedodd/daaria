@@ -10,17 +10,26 @@
   display: block;
   cursor: zoom-in;
   width: 25%;
-  &.is__diffSized {
-    width: 33%;
 
-    &.is__big {
-      width: 67%;
-    }
+  &.is__big {
+    width: 67%;
+  }
+
+  .photoGallery-row & {
+    width: 100%;
+    height: 50%;
   }
 }
 
 .photoGallery-wrapper {
   margin-top: 66%;
+  .photoGallery-row & {
+    margin-top: 0;
+  }
+}
+
+.photoGallery-row {
+  width: 33%;
 }
 
 .photoGallery-img {
@@ -35,7 +44,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &:hover {
+  &.is__hovered:hover {
     top: -3%;
     left: -3%;
     z-index: 3;
