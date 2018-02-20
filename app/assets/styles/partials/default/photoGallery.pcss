@@ -1,8 +1,12 @@
 .photoGallery {
   display: flex;
   overflow-y: hidden;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   padding: $padding-block 0;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+  }
 }
 
 .photoGallery-link {
@@ -12,12 +16,21 @@
   width: 25%;
 
   &.is__big {
-    width: 67%;
+    width: 100%;
+
+    @mixin respond-to medium {
+      width: 67%;
+    }
   }
 
   .photoGallery-row & {
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
+
+    @mixin respond-to medium {
+      width: 100%;
+      height: 50%;
+    }
   }
 }
 
@@ -29,7 +42,18 @@
 }
 
 .photoGallery-row {
-  width: 33%;
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  height: 33.3vw;
+  order: 5;
+
+  @mixin respond-to medium {
+    flex-direction: column;
+    width: 33%;
+    height: unset;
+    order: 0;
+  }
 }
 
 .photoGallery-img {
