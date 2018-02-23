@@ -5,3 +5,5 @@ bower_components
 npm-debug.log
 build
 .postcss-sorting.json
+.sass-cache
+node_modules

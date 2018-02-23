@@ -48,3 +48,15 @@ $(document).ready(function() {
     }
   });
 });
+
+
+// SLICK GALLERY
+
+$(document).ready(function(){
+  $(".slickGallery").slick({
+    infinite: true,
+    dots: true,
+    arrow: true,
+    lazyLoad: 'ondemand'
+  });
+});
