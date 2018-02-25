@@ -1,0 +1,28 @@
+.pagePress {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: $padding-block;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    padding-bottom: 13vw;
+  }
+}
+
+.pagePress-item {
+  width: 100%;
+  @mixin respond-to medium {
+    width: 45%;
+
+    &.is__top {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      z-index: 5;
+      transform: translateX(-50%);
+    }
+  }
+}
