@@ -20,21 +20,26 @@
   padding-top: $padding-block;
 
   @mixin respond-to medium {
-    flex-direction: row;
+    &.with__columnedTitles {
+      flex-direction: row;
+    }
   }
 }
 
 .page-subTitle {
-  flex-shrink: 0;
   margin: 0;
-  margin-right: 20px;
-  padding: 20px 0 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
 
-  border-top: 4px solid black;
-  font: $font-titleAlt;
-
-  @mixin respond-to medium {
-    width: 300px;
+  .with__columnedTitles & {
+    flex-shrink: 0;
+    margin-right: 20px;
+    padding: 20px 0 30px;
+    border-top: 4px solid black;
+    font: $font-titleAlt;
+    @mixin respond-to medium {
+      width: 300px;
+    }
   }
 }
 

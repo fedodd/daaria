@@ -1,18 +1,30 @@
-.main
-  .promo
-  .page-title Jameson Irish Hood 2016
-  .page-description
-    .page-text Every year in Moscow, Jameson throws a big party with free bars, cool music and load of other entertainment. Irish Hood 2016 was Jameson's most successful to date, with 2,500 people attending. <br>As both creative and production agency for this project, we created a concept for the party celebrating St. Patrick's day here in Moscow. The Main idea was to re-create an Irish street in a warehouse in one of the popular art districts in the city. We called it "Green street". <br>We partnered with five of Moscow's most popular restaurants to diversify the food and drinks during the evening, giving the experience of going into different shops and bars to sample their products. <br>We had incredible performances from Motor Drum Machine Ensemble (US) with a DJ set on the clover stage and Theophilus London (UK) with live show in the "Ugolek" space. All in all, fun was had by everyone!
-  .page-description
-    .page-subTitle My Role
-    .page-text For this project I was in charge of decoration for the entire venue. Working with a team of dercorators, 3D designers and a creative producer, we worked hard to come up with a unifying theme for the whole venue, something that fit with the aesthetic of the street. This was my biggest decoration project to date, and I am really pleased with how it all came out. <br>Within my role I also did the general budgeting of decoration project, finding and working with DIY and production contractors, general control of the set up and set down, and a closing client report.
-    .page-text For the campaign we collaborated with four Moscow artists who produced art inspired by the new limited edition Gazzelle 'Moskva' collection.
-  .page-video (https://www.youtube.com/watch?v=7kKfvvoAGP4)
-  .page-banner
-  .page-gallery
-  .page-press
-  .page-links
-    .page-link Projects
-    .page-link Facebook
-    .page-link Instagram
-    .page-link Contacts
+extends layouts/default
+
+block content
+  .main
+    .promo
+      #top
+      .page-promo(style={'background-image': 'url(assets/images/projects/jameson/background_both.jpg)'})
+        .page-title Jameson Irish Hood 2016
+      .holder
+        .page-description
+          .page-textBlock
+            p.page-text Every year in Moscow, Jameson throws a big party with free bars, cool music and load of other entertainment. Irish Hood 2016 was Jameson's most successful to date, with 2,500 people attending.
+            p.page-text As both creative and production agency for this project, we created a concept for the party celebrating St. Patrick's day here in Moscow. The Main idea was to re-create an Irish street in a warehouse in one of the popular art districts in the city. We called it "Green street".
+            p.page-text We partnered with five of Moscow's most popular restaurants to diversify the food and drinks during the evening, giving the experience of going into different shops and bars to sample their products.
+            p.page-text We had incredible performances from Motor Drum Machine Ensemble (US) with a DJ set on the clover stage and Theophilus London (UK) with live show in the "Ugolek" space. All in all, fun was had by everyone!
+        .page-description
+          .page-subTitle My Role
+          .page-textBlock
+            p.page-text For this project I was in charge of decoration for the entire venue. Working with a team of dercorators, 3D designers and a creative producer, we worked hard to come up with a unifying theme for the whole venue, something that fit with the aesthetic of the street. This was my biggest decoration project to date, and I am really pleased with how it all came out.
+            p.page-text Within my role I also did the general budgeting of decoration project, finding and working with DIY and production contractors, general control of the set up and set down, and a closing client report.
+    .pageVideo-block
+      iframe.pageVideo(src="https://www.youtube.com/embed/7kKfvvoAGP4?rel=0" frameborder="0" allowfullscreen)
+    .page-banner
+    .page-gallery
+    .page-press
+    .page-links
+      .page-link Projects
+      .page-link Facebook
+      .page-link Instagram
+      .page-link Contacts
