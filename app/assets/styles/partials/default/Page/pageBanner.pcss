@@ -1,0 +1,40 @@
+.pageBanner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    justify-content: space-arround;
+    align-items: flex-start;
+  }
+}
+
+.pageBanner-item {
+  margin-bottom: 20px;
+  height: 300px;
+
+  @mixin respond-to medium {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  @mixin respond-to large {
+    height: 350px;
+  }
+
+  &.is__wide {
+    width: 90%;
+    height: auto;
+
+    @mixin respond-to medium {
+      width: auto;
+      height: 300px;
+    }
+
+    @mixin respond-to large {
+      height: 350px;
+    }
+  }
+}
