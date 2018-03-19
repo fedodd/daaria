@@ -23,6 +23,20 @@
     &.with__columnedTitles {
       flex-direction: row;
     }
+
+    &.is__columned {
+      width: 48%;
+    }
+  }
+}
+
+.page-textHolder {
+  display: flex;
+  flex-direction: column;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

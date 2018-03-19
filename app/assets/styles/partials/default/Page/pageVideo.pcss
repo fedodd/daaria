@@ -1,8 +1,11 @@
 .pageVideo-block {
   position: relative;
   margin: $padding-block auto;
-  width: 560px;
-  max-width: 90%;
+  width: 90%;
+
+  @mixin respond-to medium {
+    width: 80%;
+  }
 
   &::before {
     display: block;
