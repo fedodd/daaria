@@ -1,28 +1,55 @@
 .pagePress {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: flex-start;
   margin-top: $padding-block;
 
   @mixin respond-to medium {
     flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 13vw;
+  }
+
+  &.is__long {
+    @mixin respond-to medium {
+      margin-top: 15%;
+    }
   }
 }
 
 .pagePress-item {
-  width: 100%;
+  position: relative;
+  width: 300px;
   @mixin respond-to medium {
     width: 45%;
 
+    &.is__highTop {
+      z-index: 10;
+    }
+
+    &.is__little {
+      margin-right: 20%;
+      width: 30%;
+    }
+
     &.is__top {
       position: absolute;
-      top: 10%;
+      top: -10%;
       left: 50%;
       z-index: 5;
       transform: translateX(-50%);
+
+      &.is__little {
+        left: 40%;
+      }
+
+      .is__long &:last-child {
+        top: -15%;
+        left: 85%;
+      }
     }
   }
 }
