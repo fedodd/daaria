@@ -8,10 +8,15 @@
     justify-content: space-arround;
     align-items: flex-start;
   }
+
+  &.is__single {
+    justify-content: center;
+  }
 }
 
 .pageBanner-item {
   margin-bottom: 20px;
+  max-width: 100%;
   height: 300px;
 
   @mixin respond-to medium {
@@ -22,6 +27,10 @@
 
   @mixin respond-to large {
     height: 350px;
+  }
+  .is__single & {
+    margin-right: 0;
+    height: auto;
   }
 
   &.is__wide {
