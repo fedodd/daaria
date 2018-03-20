@@ -19,6 +19,18 @@
     width: 25%;
   }
 
+  &.is__diffSized {
+    &:nth-child(4n+2),
+    &:nth-child(4n+3) {
+      width: 65%;
+    }
+
+    &:nth-child(4n),
+    &:nth-child(4n+1) {
+      width: 35%;
+    }
+  }
+
   &.is__big {
     width: 100%;
 
