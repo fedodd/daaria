@@ -1,3 +1,4 @@
 mixin pagePromo(imageSource, title)
   .page-promo(style={'background-image': `url(${imageSource})`})
-    .page-title= title
+    h1.page-title= title
+    block

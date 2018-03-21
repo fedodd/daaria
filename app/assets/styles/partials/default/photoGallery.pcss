@@ -31,6 +31,19 @@
     }
   }
 
+  &.is__diffSizedAlt {
+    width: 33.33333%;
+
+    &:nth-child(4n+1) {
+      width: 100%;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      width: 50%;
+    }
+  }
+
   &.is__big {
     width: 100%;
 

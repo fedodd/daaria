@@ -1,5 +1,14 @@
+.main {
+  &.is__colored {
+    color: white;
+    background-color: black;
+  }
+}
+
+
 .page-promo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 615px;
@@ -9,6 +18,7 @@
 
 .page-title {
   margin: 0 5%;
+  padding: 0;
   font: $font-mainTitle;
   text-align: center;
   color: white;
@@ -24,6 +34,7 @@
 .page-description {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
   padding-top: $padding-block;
 
   @mixin respond-to medium {
