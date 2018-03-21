@@ -1,0 +1,49 @@
+.work-titleBlock {
+  margin-bottom: $padding-block;
+  @mixin respond-to medium {
+    margin-bottom: $padding-blockBottomBig;
+  }
+}
+
+.work-subTitle {
+  margin: 0;
+  font: normal 18px/1.55 $font-base;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.workList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+  }
+}
+
+.workList-item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.workList-title {
+  margin: 0;
+  height: 60px;
+  font: $font-titleAlt;
+  text-align: center;
+
+  @mixin respond-to medium {
+    height: 80px;
+    text-align: left;
+  }
+}
+
+.workList-text {
+  padding-top: 20px;
+  padding-right: 10px;
+  border-top: 3px solid black;
+}

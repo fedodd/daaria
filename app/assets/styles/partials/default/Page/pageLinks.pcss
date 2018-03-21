@@ -1,0 +1,49 @@
+.pageLinks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin: $padding-block auto;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pageLinks-item {
+  margin: 0 5px;
+
+  @mixin respond-to medium {
+    margin: 0 20px;
+  }
+
+  &.toToplink {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding: 2px 10px;
+    border-radius: 12px;
+    background-color: black;
+
+    @mixin respond-to medium {
+      top: -2px;
+    }
+  }
+}
+
+.pageLinks-link {
+  text-decoration: none;
+  color: black;
+
+
+  &:visited,
+  &:active,
+  &:hover {
+    color: black;
+  }
+
+  .toToplink & {
+    color: white;
+  }
+}

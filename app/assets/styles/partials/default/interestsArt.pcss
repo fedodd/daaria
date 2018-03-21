@@ -1,0 +1,24 @@
+.interestsArt {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.interestsArt-item {
+  display: flex;
+  margin-bottom: 20px;
+  width: 45%;
+  border: none;
+  text-decoration: none;
+
+  @mixin respond-to medium {
+    width: 30%;
+  }
+}
+
+.interestsArt-img {
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

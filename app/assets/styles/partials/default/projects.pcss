@@ -1,0 +1,59 @@
+.projectsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: black;
+}
+
+.projectsItem {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: black;
+
+  @mixin respond-to medium {
+    width: 50%;
+  }
+
+  &:hover .projectsItem-bg {
+    opacity: .4;
+  }
+}
+
+.projectsItem-link {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font: $font-title;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  background-position: center;
+  background-size: cover;
+
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.projectsItem-bg {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  background-position: center;
+  background-size: cover;
+  transition-duration: .3s;
+}

@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: $header-height;
+  color: white;
+  background-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+
+  @mixin respond-to medium {
+    opacity: 0.9;
+    color: black;
+    background-color: white;
+  }
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: stretch;
+}
+
+.header-title {
+  text-decoration: none;
+  color: white;
+
+  @mixin respond-to medium {
+    color: black;
+  }
+}

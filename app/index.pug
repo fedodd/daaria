@@ -1,4 +1,92 @@
 extends layouts/default
 
 block content
-  h1 Hello, world!
+  .portfolio#top
+    div(class="portfolio-banner" style={'background-image': 'url(assets/images/000071180031.jpg)'})
+      h1.portfolio-title portfolio
+    .portfolio-content
+      .portfolioBlock#bio
+        .holder
+          h2.portfolioBlock-name Daria Denisova
+          span.portfolioBlock-comment Event Producer
+          p.portfolioBlock-text I'm 26 years old and have been working in creative and events agencies since I graduated from university in 2013.
+          p.portfolioBlock-text I've worked in a number of roles, starting out as an assistant to a project manager before going on to manage projects myself. I currently work for <a class="portfolioBlock-link" href="https://www.facebook.com/STEREOTACTICMOSCOW/">STEREOTACTIC</a>, a major creative and event production agency here in Moscow.
+          .contactsBLock
+            p.portfolioBlock-text Contact me:
+              a.contactsBLock-link.contactsBLock-link__phone(href='tel:+7 967 290 8418') +7 967 290 8418
+              a.contactsBLock-link.contactsBLock-link__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
+      .portfolioBlock.portfolioBlock__photo
+  .work#work
+    .holder
+      .work-titleBlock
+        h2.content-title.is__special My Work
+        p.work-subTitle In my role as an event producer <br>I work with clients on a wide variety of productions
+      .workList
+        .workList-item
+          .workList-title Launch Nights
+          .workList-text Designed for the specific purpose of creating awareness and publicity for a particular product or brand.
+        .workList-item
+          .workList-title Festivals
+          .workList-text Built around special events, such as musical performances, food markets and sports competitions.
+        .workList-item
+          .workList-title Promotional Parties
+          .workList-text Promoting & revitalising products or brands, bringing people together for performances exciting networking opprtunities.
+        .workList-item
+          .workList-title Store Openings
+          .workList-text Grand launches for new shops, outlets and flagship stores, usually accompanied by after parties and in-store entertainment.
+  .skills#skills
+    .holder
+      h2.content-title Skills & Education
+      .skillsList
+        .skillsList-item
+          h3.skillsList-title UNIVERSITY
+          p.skillsList-content 2008-2013 <br>MA in Sociology (PR and Marketing) <br>Russian State University of the Humanities, Moscow.
+        .skillsList-item
+          h3.skillsList-title COMPUTER PROGRAMS
+          p.skillsList-content I am proficient in the use of common word and data processing programs (word, excel, google docs, pages, numbers, keynote, powerpoint). I also have experience working with SketchUp and Photoshop. At the moment I am working on my illustrator skills!
+        .skillsList-item
+          h3.skillsList-title LANGUAGES - RUSSIAN AND ENGLISH
+          p.skillsList-content I am a native Russian speaker with an advanced level of English. I spend much of my time communicating with both clients and friends in English.
+        .skillsList-item
+          h3.skillsList-title DRIVING LICENCE
+          p.skillsList-content Full Russian and International Drivers Licence.
+  include partials/brands.pug
+  .projects#projects
+    h2.content-title Projects
+    .projectsList
+      .projectsItem
+        a.projectsItem-link(href='/adidas.html') Adidas Moscow Flagship Store Launch & Afterparty
+        .projectsItem-bg(style={'background-image': 'url(assets/images/adidas-page.jpg)'})
+      .projectsItem
+        a.projectsItem-link(href='/jameson.html') Jameson Irish Hood
+        .projectsItem-bg(style={'background-image': 'url(assets/images/jameson-page.jpg)'})
+      .projectsItem
+        a.projectsItem-link(href='/jagermeister.html') Jagermeister Indie Awards
+        .projectsItem-bg(style={'background-image': 'url(assets/images/OUT_5403.jpg)'})
+      .projectsItem
+        a.projectsItem-link(href='/tuborg.html') Tuborg Green Jam
+        .projectsItem-bg(style={'background-image': 'url(assets/images/160813183942.jpg)'})
+      .projectsItem
+        a.projectsItem-link(href='/olmeca.html') Olmeca Rise&Shine Tour
+        .projectsItem-bg(style={'background-image': 'url(assets/images/_VCH1014.jpg)'})
+      .projectsItem
+        a.projectsItem-link(href='/samsung.html') Samsung Galaxy S8|S8+
+        .projectsItem-bg(style={'background-image': 'url(assets/images/kv_galaxys8_unbox_phone_l.jpg)'})
+  .interests#interests
+    h2.content-title Interests
+    .interestsBlock
+      h3.interests-title Photography
+      p.interests-subtitle I love film photography and take my cameras everywhere i go!
+      include partials/photoGallery.pug
+    .interestsBlock
+      h3.interests-title Art
+      include partials/interestsArt.pug
+  .contacts#contacts
+    h2.content-title Contact me
+    a.contactsBLock-link.is__phone(href='tel:+7 967 290 8418') +7 967 290 8418
+    a.contactsBLock-link.is__email(href='mailto:daaria.me@gmail.com') daaria.me@gmail.com
+    .socialBlock
+      a.socialBlock-link(href='https://www.facebook.com/daariadi')
+        i(class="fa fa-facebook fa-2x" aria-hidden="true")
+      a.socialBlock-link(href='https://www.instagram.com/wsnt_me')
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>

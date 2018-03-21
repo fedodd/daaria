@@ -1,0 +1,50 @@
+.pageBanner {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    justify-content: space-arround;
+    align-items: flex-start;
+  }
+
+  &.is__single {
+    justify-content: center;
+  }
+}
+
+.pageBanner-item {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: 300px;
+
+  @mixin respond-to medium {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  @mixin respond-to large {
+    height: 350px;
+  }
+  .is__single & {
+    margin-right: 0;
+    height: auto;
+  }
+
+  &.is__wide {
+    width: 90%;
+    height: auto;
+
+    @mixin respond-to medium {
+      width: auto;
+      height: 300px;
+    }
+
+    @mixin respond-to large {
+      height: 350px;
+    }
+  }
+}

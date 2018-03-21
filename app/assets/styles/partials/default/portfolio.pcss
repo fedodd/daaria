@@ -1,0 +1,34 @@
+.portfolio {
+  background-color: $color-background;
+}
+
+.portfolio-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 680px;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolio-title {
+  font: $font-mainTitle;
+  line-height: -webkit-fill-available;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 60px;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    padding-top: 0;
+    height: 700px;
+  }
+}

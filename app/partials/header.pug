@@ -1,5 +1,21 @@
-include ../mixins/menu.pug
-include ../mixins/menuItem.pug
-
 header.header
-  .holder
+  .header-wrapper
+    .holder
+      .header-block
+        a.header-title(href='/' target=_blank title="Перейти на главную") Daria Denisova
+        include ../partials/menu.pug
+ul.menu.is__sliding#headerMenu
+  li.menu-item
+    a.menu-link(href='../#bio') Bio
+  li.menu-item
+    a.menu-link(href='../#work') Work
+  li.menu-item
+    a.menu-link(href='../#skills') Skills
+  li.menu-item
+    a.menu-link(href='../#brands') Brands
+  li.menu-item
+    a.menu-link(href='../#projects') Projects
+  li.menu-item
+    a.menu-link(href='../#interests') Interests
+  li.menu-item
+    a.menu-link(href='../#contacts') Contacts

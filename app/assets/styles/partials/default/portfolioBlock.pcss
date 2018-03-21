@@ -1,0 +1,53 @@
+.portfolioBlock {
+  padding: 10% 3%;
+  width: 100%;
+
+  @mixin respond-to medium {
+    width: 50%;
+  }
+}
+
+.portfolioBlock__photo {
+  margin: 0;
+  height: 548px;
+  background-image: url('../images/000095960032.jpg');
+  background-position: center;
+  background-size: cover;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+    height: inherit;
+  }
+}
+
+.portfolioBlock-name {
+  margin: 0 0 8px;
+  font: $font-titleAlt;
+
+  @mixin respond-to medium {
+    font-size: 26px;
+  }
+}
+
+.portfolioBlock-comment {
+  font: $font-sub;
+  font-weight: 300;
+}
+
+.portfolioBlock-text {
+  font: $font;
+  font-weight: 300;
+}
+
+.portfolioBlock-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-accent;
+
+  &:active,
+  &:hover,
+  &:visited {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
