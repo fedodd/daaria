@@ -9,11 +9,18 @@
 .projectsItem {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 250px;
   background-color: black;
+
+
 
   @mixin respond-to medium {
     width: 50%;
+    height: 400px;
+
+    &:nth-child(3n+1) {
+      width: 100%;
+    }
   }
 
   &:hover .projectsItem-bg {
@@ -27,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
   width: 100%;
   height: 100%;
   font: $font-title;
