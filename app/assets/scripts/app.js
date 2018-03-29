@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 // плавный переход по якорям
 
-var linkNav = document.querySelectorAll('[href^="../#"]'), //выбираем все ссылки к якорю на странице
+var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
     V = .2;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
 for (var i = 0; i < linkNav.length; i++) {
     linkNav[i].addEventListener('click', function(e) { //по клику на ссылку

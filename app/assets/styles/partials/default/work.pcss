@@ -32,6 +32,7 @@
 
 .workList-title {
   margin: 0;
+  padding: 0;
   height: 60px;
   font: $font-titleAlt;
   text-align: center;
@@ -40,10 +41,17 @@
     height: 80px;
     text-align: left;
   }
+
+  @mixin respond-to large {
+    height: 60px;
+  }
 }
 
 .workList-text {
+  margin: 0;
+  padding: 0;
   padding-top: 20px;
   padding-right: 10px;
   border-top: 3px solid black;
+  font-family: $font-alt;
 }
