@@ -36,6 +36,7 @@
   flex-direction: column;
   margin-bottom: 20px;
   padding-top: $padding-block;
+  font: $font-proj;
 
   @mixin respond-to medium {
     &.with__columnedTitles {
@@ -50,6 +51,7 @@
 
 .page-textHolder {
   display: flex;
+  flex-basis: fill;
   flex-direction: column;
 
   @mixin respond-to medium {
@@ -73,12 +75,13 @@
     border-top: 4px solid black;
     font: $font-titleAlt;
     @mixin respond-to medium {
-      width: 300px;
+      flex-basis: calc(33% - 25px);
     }
   }
 }
 
 .page-textBlock {
+  flex-basis: 67%;
   margin-top: -6px;
 }
 
