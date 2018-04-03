@@ -28,6 +28,17 @@ $(document).ready(function() {
     },
     image: {
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    },
+    zoom: {
+      enabled: true,
+      duration: 300,
+      easing: 'ease-in-out'
+    },
+    retina: {
+      ratio: 1,
+      replaceSrc: function(item, ratio) {
+        return item.src.replace(/\.\w+$/, function(m) { return '@2x' + m; });
+      }
     }
   });
 });
