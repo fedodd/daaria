@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  max-width: 900px;
   flex-row: row;
 }
 
@@ -13,6 +14,10 @@
 }
 
 .brandsList-icon {
-  width: 160px;
+  width: 120px;
   vertical-align: center;
+
+  @mixin respond-to medium {
+    width: 160px;
+  }
 }

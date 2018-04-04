@@ -1,4 +1,4 @@
-extends layouts/default
+extends layouts/project
 
 include mixins/pagePromo.pug
 
@@ -16,10 +16,11 @@ block content
           h3.page-subTitle My Role
           .page-textBlock
             p.page-text As an event producer my first responsobility was general project budgeting. Also, I organised and managed the event realization teams: creative, technical, directors and project managers team. Working on execution of the project itself, I was in control of the set up and take down, and numerous supporting roles of contractors. It was a busy role, but everything worked out well and our team put on a successful evening.
-      .pageVideo-block
-        iframe.pageVideo(src="https://www.youtube.com/embed/JW2lqcuqacs?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen)
-      .pageBanner.is__single
-        img.pageBanner-item(src='assets/images/projects/jager/1stPage/1.png')
+      .pageHolder.is__special
+        .pageVideo-block.is__special
+          iframe.pageVideo(src="https://www.youtube.com/embed/JW2lqcuqacs?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen)
+        .pageBanner.is__single.is__special
+          img.pageBanner-item(src='assets/images/projects/jager/1stPage/1.png')
       .pageGallery.photoGallery
         a.photoGallery-link(href='assets/images/projects/jager/photo/1.jpg')
           .photoGallery-wrapper

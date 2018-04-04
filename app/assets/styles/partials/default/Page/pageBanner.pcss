@@ -2,7 +2,9 @@
   display: flex;
   overflow-x: hidden;
   flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 
   @mixin respond-to medium {
     flex-direction: row;
@@ -11,7 +13,19 @@
   }
 
   &.is__single {
-    justify-content: center;
+    width: 100%;
+
+    @mixin respond-to medium {
+      width: 45%;
+    }
+  }
+
+  &.is__special {
+    justify-content: flex-start;
+
+      @mixin respond-to large {
+        justify-content: center;
+      }
   }
 }
 
@@ -26,11 +40,9 @@
     }
   }
 
-  @mixin respond-to large {
-    height: 350px;
-  }
   .is__single & {
     margin-right: 0;
+    margin-bottom: 0;
     height: auto;
   }
 
@@ -41,10 +53,7 @@
     @mixin respond-to medium {
       width: auto;
       height: 300px;
-    }
-
-    @mixin respond-to large {
-      height: 350px;
+      object-fit: cover;
     }
   }
 }

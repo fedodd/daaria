@@ -11,10 +11,11 @@ gulp.task('fonts', require('./gulp/tasks/fonts')); //Временная зада
 gulp.task('slick', require('./gulp/tasks/slick'));
 gulp.task('layout', require('./gulp/tasks/layout'));
 gulp.task('vendorScripts', require('./gulp/tasks/vendorScripts'));
+gulp.task('scriptsAlt', require('./gulp/tasks/scriptsAlt'));
 
 gulp.task('enableBuildMode', envHelpers.enableBuildMode);
 
-const defaultBuildSequence = ['clean', ['layout', 'scripts', 'styles', 'vendorScripts', 'images', 'fonts', 'slick']]; //не забыдь убрать fonts
+const defaultBuildSequence = ['clean', ['layout', 'scripts', 'styles', 'vendorScripts', 'images', 'fonts', 'slick', 'scriptsAlt']]; //не забыдь убрать fonts
 
 gulp.task('build', gs.sync(['enableBuildMode'].concat(defaultBuildSequence)));
 gulp.task('serve', gs.sync(defaultBuildSequence), require('./gulp/tasks/serve'));

@@ -5,30 +5,20 @@
   }
 }
 
-
-.page-promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 615px;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.page-title {
-  margin: 0 5%;
-  padding: 0;
-  font: $font-mainTitle;
-  text-align: center;
-  color: white;
-}
-
 .page-altTitle {
   margin: 0 auto;
   margin-top: $padding-block;
   font: $font-title;
+  font-size: 30px;
   text-align: center;
+
+  @mixin respond-to medium {
+    font-size: 60px;
+  }
+
+  @mixin respond-to large {
+    font-size: 64px;
+  }
 }
 
 .page-description {
@@ -36,6 +26,7 @@
   flex-direction: column;
   margin-bottom: 20px;
   padding-top: $padding-block;
+  font: $font-proj;
 
   @mixin respond-to medium {
     &.with__columnedTitles {
@@ -50,6 +41,7 @@
 
 .page-textHolder {
   display: flex;
+  flex-basis: fill;
   flex-direction: column;
 
   @mixin respond-to medium {
@@ -73,12 +65,13 @@
     border-top: 4px solid black;
     font: $font-titleAlt;
     @mixin respond-to medium {
-      width: 300px;
+      flex-basis: calc(33% - 25px);
     }
   }
 }
 
 .page-textBlock {
+  flex-basis: 67%;
   margin-top: -6px;
 }
 
@@ -88,5 +81,17 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+}
+
+.pageHolder.is__special {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: $padding-block auto;
+
+  @mixin respond-to medium {
+    flex-direction: row;
   }
 }
