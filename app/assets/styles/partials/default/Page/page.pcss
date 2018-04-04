@@ -93,3 +93,15 @@
     padding-bottom: 0;
   }
 }
+
+.pageHolder.is__special {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: $padding-block auto;
+
+  @mixin respond-to medium {
+    flex-direction: row;
+  }
+}

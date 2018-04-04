@@ -6,6 +6,17 @@
     width: 80%;
   }
 
+  &.is__special {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @mixin respond-to medium {
+      margin-bottom: 0;
+      width: 45%;
+    }
+  }
+
   &::before {
     display: block;
     padding-top: 56%;

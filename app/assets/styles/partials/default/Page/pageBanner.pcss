@@ -2,6 +2,7 @@
   display: flex;
   overflow-x: hidden;
   flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
 
   @mixin respond-to medium {
@@ -11,7 +12,11 @@
   }
 
   &.is__single {
-    justify-content: center;
+    width: 100%;
+
+    @mixin respond-to medium {
+      width: 45%;
+    }
   }
 }
 
@@ -31,6 +36,7 @@
   }
   .is__single & {
     margin-right: 0;
+    margin-bottom: 0;
     height: auto;
   }
 

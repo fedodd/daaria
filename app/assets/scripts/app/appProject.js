@@ -50,7 +50,8 @@ $(document).ready(function(){
     infinite: true,
     dots: true,
     arrow: true,
-    lazyLoad: 'ondemand'
+    lazyLoad: 'ondemand',
+    mobileFirst: true
   });
 });
 
