@@ -1,6 +1,7 @@
 extends layouts/project
 
 include mixins/pagePromo.pug
+include mixins/photoGallery-item.pug
 
 block content
   .main
@@ -23,49 +24,22 @@ block content
       .pageBanner
         img.pageBanner-item(src='assets/images/projects/tuborg/1stPage/1.jpg')
         img.pageBanner-item.is__wide(src='assets/images/projects/tuborg/1stPage/2.png')
-      .pageGallery.photoGallery
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/1.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/1.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/2.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/2.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/3.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/3.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/4.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/4.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/5.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/5.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/6.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/6.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/7.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/7.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/8.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/8.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/9.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/9.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/10.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/10.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/11.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/11.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/12.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/12.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/13.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/13.jpg')
-        a.photoGallery-link.is__diffSized(href='assets/images/projects/tuborg/photos/14.jpg')
-          .photoGallery-wrapper
-            img.photoGallery-img.with__paddings(src='assets/images/projects/tuborg/photos/14.jpg')
+    .pageGallery.photoGallery
+      +photoGallery-item('assets/images/projects/tuborg/photos/1.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/2.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/3.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/4.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/5.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/6.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/7.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/8.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/9.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/10.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/11.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/12.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/13.jpg', 'is__diffSized', 'with__paddings')
+      +photoGallery-item('assets/images/projects/tuborg/photos/14.jpg', 'is__diffSized', 'with__paddings')
+
       .pageVideo-block
         iframe.pageVideo(src="https://www.youtube.com/embed/huqln5f10hk?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen)
       .pagePress.is__long
