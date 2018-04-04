@@ -1,4 +1,7 @@
-mixin pagePromo(imageSource, title)
-  .page-promo(style={'background-image': `url(${imageSource})`})
-    h1.page-title= title
-    block
+mixin pagePromo(imageSource, title, subtitle)
+  .page-promoHolder
+    .page-promo(style={'background-image': `url(${imageSource})`})
+    .page-promoText
+      h1.page-title= title
+      p.page-title.is__subtitle= subtitle
+      block

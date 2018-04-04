@@ -5,30 +5,20 @@
   }
 }
 
-
-.page-promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 615px;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.page-title {
-  margin: 0 5%;
-  padding: 0;
-  font: $font-mainTitle;
-  text-align: center;
-  color: white;
-}
-
 .page-altTitle {
   margin: 0 auto;
   margin-top: $padding-block;
   font: $font-title;
+  font-size: 30px;
   text-align: center;
+
+  @mixin respond-to medium {
+    font-size: 60px;
+  }
+
+  @mixin respond-to large {
+    font-size: 64px;
+  }
 }
 
 .page-description {

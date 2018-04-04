@@ -2,24 +2,39 @@
   background-color: $color-background;
 }
 
-.portfolio-banner {
+.portfolio-holder {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 680px;
   background-color: black;
+}
+
+.portfolio-banner {
+  width: 100%;
+  height: 100%;
+  opacity: .6;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
 .portfolio-title {
+  position: absolute;
+  top: calc(50% + 20px);
+  width: 100%;
   font: $font-mainTitle;
+  font-size: 32px;
   line-height: -webkit-fill-available;
   text-align: center;
   text-transform: uppercase;
   color: white;
+  transform: translateY(-50%);
+
+  @mixin respond-to medium {
+    font: $font-mainTitle;
+  }
 }
 
 .portfolio-content {
