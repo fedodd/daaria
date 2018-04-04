@@ -4,6 +4,7 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   @mixin respond-to medium {
     flex-direction: row;
@@ -18,6 +19,14 @@
       width: 45%;
     }
   }
+
+  &.is__special {
+    justify-content: flex-start;
+
+      @mixin respond-to large {
+        justify-content: center;
+      }
+  }
 }
 
 .pageBanner-item {
@@ -31,9 +40,6 @@
     }
   }
 
-  @mixin respond-to large {
-    height: 350px;
-  }
   .is__single & {
     margin-right: 0;
     margin-bottom: 0;
@@ -47,10 +53,7 @@
     @mixin respond-to medium {
       width: auto;
       height: 300px;
-    }
-
-    @mixin respond-to large {
-      height: 350px;
+      object-fit: cover;
     }
   }
 }
