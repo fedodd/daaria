@@ -2,7 +2,7 @@ Arguments:
   /usr/bin/node /usr/bin/yarn watch
 
 PATH: 
-  /home/fedodd/bin:/home/fedodd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/ProgramData/Chocolatey/bin:/mnt/c/Program Files (x86)/Skype/Phone:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Users/semen/scoop/shims:/mnt/c/Users/semen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/tools/cmder:/mnt/c/Users/semen/AppData/Roaming/npm:/mnt/c/Users/semen/AppData/Local/GitHubDesktop/bin:/snap/bin:/mnt/c/mongodb/bin
+  /home/fedodd/bin:/home/fedodd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/ProgramData/Chocolatey/bin:/mnt/c/Program Files (x86)/Skype/Phone:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/semen/scoop/shims:/mnt/c/Users/semen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/tools/cmder:/mnt/c/Users/semen/AppData/Roaming/npm:/mnt/c/Users/semen/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/semen/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/semen/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin:/mnt/c/mongodb/bin
 
 Yarn version: 
   1.5.1

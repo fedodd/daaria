@@ -12,13 +12,13 @@
   height: 250px;
   background-color: black;
 
+  &.is__empty {
+    display: none;
+  }
+
   @mixin respond-to medium {
     width: 50%;
     height: 400px;
-
-    &:nth-child(3n+1) {
-      width: 100%;
-    }
   }
 
   &:hover .projectsItem-bg {

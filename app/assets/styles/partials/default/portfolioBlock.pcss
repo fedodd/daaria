@@ -11,7 +11,7 @@
   margin: 0;
   height: 548px;
   background-image: url('../images/000095960032.jpg');
-  background-position: center;
+  background-position: center -2px;
   background-size: cover;
 
   @mixin respond-to medium {
@@ -49,5 +49,9 @@
   &:visited {
     text-decoration: none;
     color: $color-accent;
+  }
+
+  &:hover {
+    opacity: .6;
   }
 }
