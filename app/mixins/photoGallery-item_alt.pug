@@ -1,3 +1,4 @@
 mixin photoGallery-item_alt(source, linkClass, imgClass)
   a.photoGallery-link(href= source, class= linkClass)
     .photoGallery-img.is__alt(style="background-image: url("+source+")")
+      img.photoGallery-img(src= source)

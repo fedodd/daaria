@@ -16,6 +16,14 @@
     grid-row-gap: 5px;
     grid-column-gap: 5px;
 
+    &.is__ams {
+      grid-template-rows: repeat(20, 57vw);
+
+      @mixin respond-to medium {
+        grid-template-rows: repeat(20, 28vw);
+      }
+    }
+
     @mixin respond-to medium {
       grid-template-columns: repeat(2, 50vw);
       grid-template-rows: repeat(25, 28vw); 
@@ -97,6 +105,13 @@
       background-position: center;
       background-size: cover;
     }
+  }
+
+  .is__grid.is__ams &:last-child {
+    grid-column-start: 1;
+    grid-column-end:   3;
+    grid-row-start: 19;
+    grid-row-end:   21;
   }
 
   .is__grid &:nth-child(6n) {
@@ -217,6 +232,10 @@
 
   &.is__alt {
     position: static;
+  }
+
+  .is__alt & {
+    display: none;
   }
 
   .photoGallery-link.is__diffSized .photoGallery-wrapper & {
